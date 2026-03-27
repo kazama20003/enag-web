@@ -6,7 +6,7 @@ const mainLinks = [
   "Diplomados",
   "Especializaciones",
   "Campus virtual",
-  "Solicitar informaci\u00f3n",
+  "Solicitar información",
 ];
 
 const socialLinks = [
@@ -29,7 +29,7 @@ export function HomeFooter() {
                 className="max-w-[10ch] text-[clamp(3rem,6vw,5.6rem)] font-black leading-[0.95] tracking-[-0.075em] text-white"
                 style={heroFont}
               >
-                ENAG PERU Escuela de liderazgo y formaci&#243;n p&#250;blica
+                ENAG PERU Escuela de liderazgo y formación pública
               </h2>
             </div>
 
@@ -40,7 +40,7 @@ export function HomeFooter() {
               <div className="text-[1.05rem] leading-[1.08] text-white/88">
                 <p>ENAG PERU</p>
                 <p>Escuela Nacional de Alcaldes</p>
-                <p>y Gobernadores del Per&#250;</p>
+                <p>y Gobernadores del Perú</p>
               </div>
             </div>
           </div>
@@ -71,12 +71,12 @@ export function HomeFooter() {
               <div className="mt-8 space-y-4 text-white/92">
                 <div>
                   <p>Lima</p>
-                  <p>Av. Rep&#250;blica de Panam&#225; 4580</p>
+                  <p>Av. República de Panamá 4580</p>
                   <p>T (+51) 01 555 0123</p>
                 </div>
 
                 <div>
-                  <p>Atenci&#243;n virtual nacional</p>
+                  <p>Atención virtual nacional</p>
                   <p>T (+51) 999 888 777</p>
                 </div>
               </div>
@@ -104,14 +104,14 @@ export function HomeFooter() {
               Aviso legal
             </a>
             <a href="#" className="underline underline-offset-4 hover:text-white/70">
-              Pol&#237;tica de privacidad
+              Política de privacidad
             </a>
             <a href="#" className="underline underline-offset-4 hover:text-white/70">
-              Pol&#237;tica de cookies
+              Política de cookies
             </a>
           </div>
 
-          <p>&#169; 2026 ENAG PERU - Todos los derechos reservados</p>
+          <p>© 2026 ENAG PERU - Todos los derechos reservados</p>
         </div>
       </div>
     </footer>

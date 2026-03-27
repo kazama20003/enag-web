@@ -6,23 +6,23 @@ import { baseFont, heroFont } from "@/components/home/home-shared";
 const paymentMethods = [
   {
     title: "Tarjeta",
-    detail: "Visa, Mastercard y d\u00e9bito",
+    detail: "Visa, Mastercard y débito",
   },
   {
     title: "Transferencia",
-    detail: "Coordinaci\u00f3n asistida por el equipo comercial",
+    detail: "Coordinación asistida por el equipo comercial",
   },
   {
     title: "WhatsApp",
-    detail: "Reserva y confirmaci\u00f3n guiada",
+    detail: "Reserva y confirmación guiada",
   },
 ];
 
 const includedItems = [
   "Acceso al campus virtual 24/7",
   "Clases en vivo y materiales descargables",
-  "Soporte acad\u00e9mico durante el programa",
-  "Certificaci\u00f3n al completar el curso",
+  "Soporte académico durante el programa",
+  "Certificación al completar el curso",
 ];
 
 const paymentFields = [
@@ -31,7 +31,7 @@ const paymentFields = [
     placeholder: "Ingresa tus nombres y apellidos",
   },
   {
-    label: "Correo electr\u00f3nico",
+    label: "Correo electrónico",
     placeholder: "tucorreo@ejemplo.com",
   },
   {
@@ -46,7 +46,7 @@ const paymentFields = [
 
 const supportChannels = [
   {
-    title: "WhatsApp de matr\u00edcula",
+    title: "WhatsApp de matrícula",
     value: "(+51) 999 888 777",
     href: "https://wa.me/51999888777?text=Hola%2C%20quiero%20inscribirme%20en%20un%20programa%20de%20ENAG%20PERU.",
   },
@@ -56,16 +56,16 @@ const supportChannels = [
     href: "mailto:informes@enagperu.edu.pe",
   },
   {
-    title: "Tel\u00e9fono de atenci\u00f3n",
+    title: "Teléfono de atención",
     value: "(+51) 01 555 0123",
     href: "tel:+51015550123",
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Inscripci\u00f3n",
+  title: "Inscripción",
   description:
-    "P\u00e1gina de inscripci\u00f3n y pago de ENAG PERU para cursos, diplomados y especializaciones.",
+    "Página de inscripción y pago de ENAG PERU para cursos, diplomados y especializaciones.",
 };
 
 export default function CheckoutPage() {
@@ -81,12 +81,12 @@ export default function CheckoutPage() {
               className="mt-4 max-w-5xl text-[clamp(3rem,6vw,6.15rem)] font-black leading-[0.9] tracking-[-0.08em]"
               style={heroFont}
             >
-              Completa tu inscripci\u00f3n y asegura tu vacante 2026.
+              Completa tu inscripción y asegura tu vacante 2026.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-[1.25] text-black/72 lg:text-[1.24rem]">
-              Este espacio concentra el pago, la validaci\u00f3n de tus datos y
-              el canal de soporte para que puedas matricularte sin salir del
-              flujo de compra.
+              Este espacio concentra el pago, la validación de tus datos y el
+              canal de soporte para que puedas matricularte sin salir del flujo
+              de compra.
             </p>
 
             <div className="mt-8 grid gap-0 border border-black/15 sm:grid-cols-3">
@@ -94,7 +94,9 @@ export default function CheckoutPage() {
                 <div
                   key={item.title}
                   className={`px-5 py-5 ${
-                    index !== paymentMethods.length - 1 ? "sm:border-r sm:border-black/15" : ""
+                    index !== paymentMethods.length - 1
+                      ? "sm:border-r sm:border-black/15"
+                      : ""
                   }`}
                 >
                   <p
@@ -114,7 +116,7 @@ export default function CheckoutPage() {
           <div className="relative min-h-[340px]">
             <Image
               src="/course-meeting.jpg"
-              alt="Participantes revisando matr\u00edcula y pago de un programa"
+              alt="Participantes revisando matrícula y pago de un programa"
               width={1600}
               height={1067}
               className="h-full w-full object-cover"
@@ -123,10 +125,11 @@ export default function CheckoutPage() {
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02)_0%,rgba(0,0,0,0.42)_100%)]" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white lg:p-8">
               <p className="text-sm uppercase tracking-[0.14em] text-white/70">
-                Inscripci\u00f3n asistida
+                Inscripción asistida
               </p>
               <p className="mt-2 max-w-md text-lg leading-[1.18] lg:text-[1.22rem]">
-                Si necesitas ayuda con el pago o la reserva, tambi\u00e9n puedes cerrar tu proceso por WhatsApp.
+                Si necesitas ayuda con el pago o la reserva, también puedes
+                cerrar tu proceso por WhatsApp.
               </p>
             </div>
           </div>
@@ -143,7 +146,7 @@ export default function CheckoutPage() {
               className="mt-3 max-w-3xl text-[clamp(2.25rem,4vw,4.1rem)] font-black leading-[0.95] tracking-[-0.07em]"
               style={heroFont}
             >
-              Curso ejecutivo en gesti\u00f3n p\u00fablica y liderazgo territorial.
+              Curso ejecutivo en gestión pública y liderazgo territorial.
             </h2>
 
             <div className="mt-8 grid gap-0 border border-black/15 sm:grid-cols-2">
@@ -157,7 +160,7 @@ export default function CheckoutPage() {
               </div>
               <div className="px-5 py-5">
                 <p className="text-xs uppercase tracking-[0.14em] text-black/50">
-                  Inversi\u00f3n
+                  Inversión
                 </p>
                 <p
                   className="mt-2 text-[2.6rem] font-black leading-none tracking-[-0.06em]"
@@ -216,7 +219,7 @@ export default function CheckoutPage() {
                 <div className="grid gap-5 sm:grid-cols-[1fr_160px]">
                   <label className="block">
                     <span className="text-sm uppercase tracking-[0.14em] text-black/55">
-                      N\u00famero de tarjeta
+                      Número de tarjeta
                     </span>
                     <input
                       type="text"
@@ -244,8 +247,8 @@ export default function CheckoutPage() {
                 </button>
 
                 <p className="text-sm leading-[1.3] text-black/58">
-                  Si prefieres una atenci\u00f3n guiada, tambi\u00e9n puedes reservar
-                  tu vacante y confirmar pago por WhatsApp con el equipo comercial.
+                  Si prefieres una atención guiada, también puedes reservar tu
+                  vacante y confirmar pago por WhatsApp con el equipo comercial.
                 </p>
               </form>
             </div>
@@ -258,13 +261,14 @@ export default function CheckoutPage() {
           <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <p className="text-sm uppercase tracking-[0.16em] text-white/55">
-                Soporte de matr\u00edcula
+                Soporte de matrícula
               </p>
               <h2
                 className="mt-3 max-w-4xl text-[clamp(2.5rem,5vw,4.8rem)] font-black leading-[0.92] tracking-[-0.075em]"
                 style={heroFont}
               >
-                Si no deseas pagar en l\u00ednea, te ayudamos a cerrar el proceso por otro canal.
+                Si no deseas pagar en línea, te ayudamos a cerrar el proceso por
+                otro canal.
               </h2>
             </div>
             <a
